@@ -1,0 +1,62 @@
+.logo{
+    width: 4em;
+    float: left;
+    padding: 2em;
+   
+}
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+article{
+    margin-top: 3em;
+    border-bottom: 1px solid #7c7d7d;
+}
+main{
+    margin-left: 15em;
+    margin-right: 15em;    
+}
+button{
+    border-radius: 2em;
+    background-color: #ffffff;
+    border: none;
+    width: 4em;
+    height: 2em;
+    margin: 0em 3em 4em 0em;
+    padding: 0em;
+}
+/* animation bouton like */
+.btnLike:hover{
+    background-color:rgba(255, 71, 84, .7);
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, .7);
+    animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+    text-decoration: none;
+}
+@keyframes battement {
+    to {
+      box-shadow: 0 0 0 30px rgba(255, 71, 84, 0);
+    }
+  }
+/* animation bouton dislike */
+  .btnDislike:hover{
+    background-color:rgba(218, 216, 196, 0.7);
+    box-shadow: 0 0 0 0 rgba(218, 216, 196, 0.7);
+    animation: dislike 2s infinite cubic-bezier(.66, 0, 0, 1);
+    text-decoration: none;
+}
+@keyframes dislike {
+    to {
+      box-shadow: 0 0 0 30px rgba(255, 71, 84, 0);
+    }
+  }
+
+.removeLike{
+    background-color: rgba(255, 71, 84, .7);
+}
+.number{
+  margin: 1em;
+}
+.removeDislike{
+  background-color:rgba(218, 216, 196, 0.7);
+  padding: 0em;
+}
